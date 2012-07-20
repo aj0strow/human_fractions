@@ -11,7 +11,7 @@ class Rational
     end    
   end
   
-  def humanize(allowed_bases = ALLOWED_BASES)
+  def to_fraction(allowed_bases = ALLOWED_BASES)
     allowed_bases.map { |b| 
       self.round_to_nearest Rational(1, b)
     }.sort { |x, y|
@@ -24,7 +24,7 @@ end
 class Float
   
   def to_fraction(allowed_bases = ALLOWED_BASES)
-    self.to_r.humanize allowed_bases
+    self.to_r.to_fraction allowed_bases
   end
   
 end

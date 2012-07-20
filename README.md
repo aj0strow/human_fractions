@@ -33,15 +33,15 @@ puts (-1.0034 / 3.2).to_fraction [3]
 
 ```
 
-###### Rational#humanize
+###### Rational#to_fraction
 
 ```ruby
 
 require './human_fractions'
 
-puts Rational(26, 100).humanize
+puts Rational(26, 100).to_fraction
 # => 1/4
-puts Rational(26, 100).humanize [2, 3, 6]
+puts Rational(26, 100).to_fraction [2, 3, 6]
 # => 1/3
 
 ```

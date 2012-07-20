@@ -12,8 +12,8 @@ class Rational
   end
   
   def humanize(allowed_bases = ALLOWED_BASES)
-    allowed_bases.map { 
-      |b| self.round_to_nearest Rational(1, b)
+    allowed_bases.map { |b| 
+      self.round_to_nearest Rational(1, b)
     }.sort { |x, y|
       (self - x).abs <=> (self - y).abs
     }.first

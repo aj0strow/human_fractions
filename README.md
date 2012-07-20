@@ -54,7 +54,7 @@ require './human_fractions'
 
 puts Rational(7, 16).round_to_nearest '1/2'
 # => 1/2
-puts Rational(7, 16).round_to_nearest 0.5
+puts '7/16'.to_r.round_to_nearest 0.5
 # => 1/2
 puts Rational(7, 16).round_to_nearest Rational(1, 2)
 # => 1/2

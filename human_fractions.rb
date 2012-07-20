@@ -27,5 +27,9 @@ class Float
     self.to_r.to_fraction allowed_bases
   end
   
+  def round_to_nearest(precision)
+    self.to_r.round_to_nearest precision
+  end
+  
 end
 

@@ -20,5 +20,3 @@ class TestFraction < Test::Unit::TestCase
   end
   
 end
-
-puts Rational(26, 100).humanize [2, 3, 6]

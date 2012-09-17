@@ -2,9 +2,9 @@
 
 Sometimes computers are impractically accurate. For example, once you start doing fancy operations with floating-point numbers, you lose end-readability.
 
-The point of these 30 lines of code is to convert a floating-point number to the closest fraction with an acceptable base. 
+The point of these 35 lines of code is to convert a floating-point number to the closest fraction with an acceptable base. 
 
-An application might be in baking, where you may want to specify only bases in [2, 3, 4, 6, 8] for recipes. That is the default set of acceptable bases, but change it to what you want or pass in an array. 
+An application might be in baking, where you may want to specify only bases in [2, 3, 4, 6, 8] for recipes. That is the default set of acceptable bases, but change it to what you want or pass in suitable values. 
 
 installation
 ------------

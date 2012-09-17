@@ -4,9 +4,9 @@ require 'test/unit'
 class TestFraction < Test::Unit::TestCase
   
   def test_rational_round_to_nearest
+    assert_raise ArgumentError do Rational(1, 2).round_to_nearest(0) end
     assert_equal Rational(1, 4), Rational(26, 100).round_to_nearest('1/4')
     assert_equal Rational(-3, 2), Rational(-76, 48).round_to_nearest('1/2')
-    assert_raise ArgumentError do Rational(1, 2).round_to_nearest(0) end
   end
   
   def test_rational_to_fraction

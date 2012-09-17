@@ -26,9 +26,9 @@ usage
 
 require './human_fractions'
 
-puts (4.99999 / 7.99998587598).to_fraction
+(4.99999 / 7.99998587598).to_fraction
 # => 5/8
-puts (-1.0034 / 3.2).to_fraction [3]
+(-1.0034 / 3.2).to_fraction 3
 # => -1/3
 
 ```
@@ -39,9 +39,11 @@ puts (-1.0034 / 3.2).to_fraction [3]
 
 require './human_fractions'
 
-puts Rational(26, 100).to_fraction
+Rational(26, 100).to_fraction
 # => 1/4
-puts Rational(26, 100).to_fraction [2, 3, 6]
+Rational(26, 100).to_fraction [2, 3, 6]
+# => 1/3
+Rational(26, 100).to_fraction 2, 3, 6
 # => 1/3
 
 ```
@@ -52,11 +54,11 @@ puts Rational(26, 100).to_fraction [2, 3, 6]
 
 require './human_fractions'
 
-puts Rational(7, 16).round_to_nearest '1/2'
+Rational(7, 16).round_to_nearest '1/2'
 # => 1/2
-puts '7/16'.to_r.round_to_nearest 0.5
+'7/16'.to_r.round_to_nearest 0.5
 # => 1/2
-puts Rational(7, 16).round_to_nearest Rational(1, 2)
+Rational(7, 16).round_to_nearest Rational(1, 2)
 # => 1/2
 
 ```

@@ -67,11 +67,5 @@ Rational(7, 16).round_to_nearest Rational(1, 2)
 license
 -------
 
-Released with no strings attached. 
-
-> Specifically:
->
-> You may pretend that you wrote it, including bragging rights should the opportunity come up. 
->
-> You may not sue me for any reason related to this code whatsoever. 
+Released with no strings attached. Specifically, no credit is due, and no suing. 
 
